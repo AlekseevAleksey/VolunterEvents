@@ -1,0 +1,33 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main_content_left_margin">16dp</dimen>
+    <dimen name="main_content_top_margin">16dp</dimen>
+    <dimen name="main_content_right_margin">16dp</dimen>
+    <dimen name="nav_header_height">164dp</dimen>
+    <dimen name="default_textSize">14sp</dimen>
+    <dimen name="user_background_layout_height">164dp</dimen>
+    <dimen name="user_photo_layout_width">64dp</dimen>
+    <dimen name="user_photo_layout_height">64dp</dimen>
+    <dimen name="user_photo_layout_marginTop">22dp</dimen>
+    <dimen name="user_photo_layout_marginLeft">16dp</dimen>
+    <dimen name="user_data_layout_height">56dp</dimen>
+    <dimen name="user_data_layout_marginBottom">8dp</dimen>
+    <dimen name="user_name_textSize">14sp</dimen>
+    <dimen name="user_name_layout_marginLeft">16dp</dimen>
+    <dimen name="user_email_textSize">14sp</dimen>
+    <dimen name="user_email_layout_marginLeft">16dp</dimen>
+    <dimen name="main_margin">16dp</dimen>
+    <dimen name="toolbar_collapsing_size">256dp</dimen>
+    <dimen name="fragment.contacts.min_height">1000dp</dimen>
+    <dimen name="list.user.margin">8dp</dimen>
+    <dimen name="list.user.corner">2dp</dimen>
+    <dimen name="list.user.relative_height">72dp</dimen>
+    <dimen name="list.user.image_width">40dp</dimen>
+    <dimen name="list.user.image_height">40dp</dimen>
+    <dimen name="list.user.margin_left">72dp</dimen>
+    <dimen name="list.user.margin_start">72dp</dimen>
+</resources>
