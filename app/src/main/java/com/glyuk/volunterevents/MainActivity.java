@@ -2,11 +2,9 @@ package com.glyuk.volunterevents;
 
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -20,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-//dfgdf
+
 public class MainActivity extends AppCompatActivity {
 
     private List<ModelEvents> events;
@@ -56,22 +54,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void openAdd() {
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        CustomDialogFragment newFragment = new CustomDialogFragment();
+        Intent intent=new Intent(this, CreateNewEvent.class);
 
-        FragmentTransaction transaction = fragmentManager.beginTransaction();
-        transaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
-        transaction.add(android.R.id.content, newFragment)
-                .addToBackStack(null).commit();
-
-
-
-                /*newFragment.show(fragmentManager, "dialog");*/
-
-/*                DialogFragment newFragment = new CustomDialogFragment();
-                newFragment.show(getSupportFragmentManager(), "dialog");
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();*/
+        startActivity(intent);
+        //finish();
     }
 
     private void initializeData() {

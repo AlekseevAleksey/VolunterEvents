@@ -30,4 +30,6 @@
     <dimen name="list.user.image_height">40dp</dimen>
     <dimen name="list.user.margin_left">72dp</dimen>
     <dimen name="list.user.margin_start">72dp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 </resources>

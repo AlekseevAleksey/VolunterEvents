@@ -1,3 +1,4 @@
+/*
 package com.glyuk.volunterevents;
 
 import android.os.Bundle;
@@ -33,6 +34,7 @@ public class CustomDialogFragment extends DialogFragment {
 
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
 
+*/
 /*        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
 
         LayoutInflater inflater = getActivity().getLayoutInflater();
@@ -49,8 +51,10 @@ public class CustomDialogFragment extends DialogFragment {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.cancel();
                     }
-                });*/
+                });*//*
+
 
         return dialog;
     }
 }
+*/
