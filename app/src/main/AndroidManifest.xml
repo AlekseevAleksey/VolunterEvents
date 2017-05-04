@@ -21,6 +21,10 @@
         <activity
             android:name=".CreateNewEvent"
             android:label="@string/title_activity_create_new_event1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ViewEvent"
+            android:label="@string/title_activity_view_event"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
