@@ -8,8 +8,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -18,12 +19,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".CreateNewEvent"
+            android:name=".activity.CreateNewEvent"
             android:label="@string/title_activity_create_new_event1"
             android:theme="@style/AppTheme.NoActionBar" />
+
         <activity
-            android:name=".ViewEvent"
+            android:name=".activity.ViewEvent"
             android:label="@string/title_activity_view_event"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
