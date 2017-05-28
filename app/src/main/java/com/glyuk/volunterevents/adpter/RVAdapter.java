@@ -12,14 +12,16 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+
 import com.glyuk.volunterevents.R;
+
 import com.glyuk.volunterevents.activity.ViewEvent;
 import com.glyuk.volunterevents.model.ModelEvents;
 
 import java.util.ArrayList;
 
 import io.realm.RealmChangeListener;
-import io.realm.RealmResults;
+
 
 public class RVAdapter extends RecyclerView.Adapter<RVAdapter.EventViewHolder> implements RealmChangeListener {
 
@@ -53,16 +55,18 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.EventViewHolder> i
         holder.description.setText(eventDetailsArrayList.get(position).getDescription());
         holder.image.setImageURI(Uri.parse(eventDetailsArrayList.get(position).getImage().toString()));
 
+
         holder.cardView.setTag(position);
-/*        //holder.cardView.setOnClickListener( new View.OnClickListener() {
+        holder.cardView.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //Context context = v.getContext();
-                Intent intent=new Intent(cont, ViewEvent.class);
-                cont.startActivity(intent);
+                Context context = v.getContext();
+                Intent intent=new Intent(context, ViewEvent.class);
+                intent.putExtra("PersonID", eventDetailsArrayList.get(position).getId());
+                context.startActivity(intent);
 
             }
-        });*/
+        });
     }
 
     @Override

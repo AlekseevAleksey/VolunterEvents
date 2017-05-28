@@ -10,6 +10,13 @@
     <string name="discription">Описание</string>
 
 
+    <string name="event_id">ID : %1$s</string>
+    <string name="event_name">%1$s</string>
+    <string name="event_description">Описание : %1$s</string>
+    <string name="event_address">Дата : %1$s</string>
+    <string name="event_member">Участников : %1$s</string>
+
+
     <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 
@@ -30,16 +37,6 @@
     <string name="roboto.condensed">sans-serif-condensed</string>
     <string name="roboto.thin">sans-serif-thin</string>
     <string name="roboto.medium">sans-serif-medium</string>
-    <string name="fragment.profile.number">+7(937)803-90-46</string>
-    <string name="fragment.profile.phone">Мобильный</string>
-    <string name="fragment.profile.gmail">androidzakzak@gmail.com</string>
-    <string name="fragment.profile.mail">E-mail</string>
-    <string name="fragment.profile.vk_id">http://vk.com/id267910373</string>
-    <string name="fragment.profile.vk">VK</string>
-    <string name="fragment.profile.github_id">https://github.com/androidzakzak/School-Softdesign</string>
-    <string name="fragment.profile.github">GitHub</string>
-    <string name="fragment.profile.info">Люблю смотреть сериалы =)</string>
-    <string name="fragment.profile.information">О себе</string>
     <string name="list.user.text">Text</string>
     <string name="title_activity_create_new_event1">CreateNewEvent1</string>
     <string name="large_text">
@@ -132,6 +129,5 @@
         "when a user tries to pick up one of cards.\n\n"
     </string>
     <string name="title_activity_view_event">ViewEvent</string>
-
 
 </resources>

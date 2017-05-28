@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<android.support.v4.widget.NestedScrollView-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,28 +11,117 @@
     tools:showIn="@layout/activity_view_event">
 
 
-    <RelativeLayout
+    <TabHost
+        android:id="@+id/tabHost"
+        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
 
-        <TextView
-            android:id="@+id/view_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black_navigate"
-            android:textStyle="bold"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:id="@+id/view_description"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/text_margin"
-            android:layout_marginRight="@dimen/text_margin"
-            android:layout_marginTop="56dp"
-            android:layout_below="@+id/view_name"
-            android:layout_centerHorizontal="true" />
-    </RelativeLayout>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-</android.support.v4.widget.NestedScrollView>
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TabWidget>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:id="@+id/relative"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/view_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/view_member"
+                        android:layout_below="@+id/view_member"
+                        android:text="Событие"
+                        android:textAlignment="center"
+                        android:textColor="@color/primary_text"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/view_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view_name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/text_margin"
+                        android:layout_marginRight="@dimen/text_margin"
+                        android:layout_marginTop="16dp"
+                        android:text="@string/large_text" />
+
+                    <TextView
+                        android:id="@+id/view_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/view_description"
+                        android:layout_marginTop="37dp"
+                        android:text="30.05.2017 - 17:00"
+                        android:textColor="@color/primary_text" />
+
+                    <TextView
+                        android:id="@+id/view_member"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/view_date"
+                        android:layout_alignBottom="@+id/view_date"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="@dimen/margin_10dp"
+                        android:text="Количество участников: 7 / 10"
+                        android:textColor="@color/primary_text"
+                        tools:ignore="RtlHardcoded" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/liner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ListView
+                            android:id="@+id/lv_gallery"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fastScrollEnabled="true"
+                            android:fastScrollAlwaysVisible="true" >
+
+                        </ListView>
+                    </LinearLayout>
+
+
+
+                    <Button
+                        android:id="@+id/btn_gallery"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Добавить фото"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+
+    </LinearLayout>
+<!--</android.support.v4.widget.NestedScrollView>-->
